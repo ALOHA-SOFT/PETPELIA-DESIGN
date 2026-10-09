@@ -43,7 +43,7 @@
 
   <div class="container">
     <!-- 영상 -->
-    <video src="../video/02/MSP-05 유튜브.mp4" width="100%" controls autoplay></video>
+    <video src="../video/02/MSP-05 유튜브.mp4" width="100%" controls autoplay id="auto"></video>
     <!-- 헤더 -->
     <img src="../img/02/헤더.png" alt="">
     <!-- 핵심 GIF -->
@@ -86,6 +86,12 @@
       pagination: { el: '.swiper-pagination', clickable: true },
       navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
     });
+
+    // id="auto"인 강제 플레이
+    const autoVideo = document.getElementById('auto');
+    if (autoVideo) {
+      autoVideo.play();
+    }
   </script>
 </body>
 </html>
