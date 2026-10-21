@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>네이버 스마트스토어 사용 가이드 | 펫펠리아</title>
+  <link rel="icon" href="../../img/favicon.png" type="image/png">
+
+  <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/mm-vertical.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/simplebar/css/simplebar.css">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+  <link href="sass/main.css" rel="stylesheet">
+  <link href="sass/dark-theme.css" rel="stylesheet">
+  <link href="sass/blue-theme.css" rel="stylesheet">
+  <link href="sass/semi-dark.css" rel="stylesheet">
+  <link href="sass/bordered-theme.css" rel="stylesheet">
+  <link href="sass/responsive.css" rel="stylesheet">
+  <link href="../common/guide.css" rel="stylesheet">
+</head>
+
+<body data-platform="naver">
+
+  <header class="top-header">
+    <nav class="navbar navbar-expand align-items-center gap-4">
+      <div class="btn-toggle">
+        <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
+      </div>
+      <div class="guide-search flex-grow-1">
+        <input id="guideSearch" class="form-control rounded-5" type="text" placeholder="기능 검색 (예: 송장, 반품, 정산)" autocomplete="off">
+        <span class="material-icons-outlined search-icon">search</span>
+        <div id="searchResults" class="guide-search-results"></div>
+      </div>
+      <ul class="navbar-nav gap-1 nav-right-links align-items-center ms-auto">
+        <li class="nav-item d-none d-md-block">
+          <a class="btn btn-sm btn-brand" href="https://accounts.commerce.naver.com/login" target="_blank" rel="noopener">스마트스토어센터 로그인</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dark-mode" href="javascript:;" title="다크 모드"><i class="material-icons-outlined">dark_mode</i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="sidebar-wrapper" data-simplebar="true">
+    <div class="sidebar-header">
+      <div class="logo-icon">
+        <img src="../../img/favicon.png" class="logo-img" alt="">
+      </div>
+      <div class="logo-name flex-grow-1">
+        <h5 class="mb-0">스토어 가이드</h5>
+      </div>
+      <div class="sidebar-close">
+        <span class="material-icons-outlined">close</span>
+      </div>
+    </div>
+    <div class="sidebar-nav">
+      <ul class="metismenu" id="sidenav"></ul>
+    </div>
+  </aside>
+
+  <main class="main-wrapper">
+    <div class="main-content" id="app"></div>
+  </main>
+
+  <div class="overlay btn-toggle"></div>
+
+  <footer class="page-footer">
+    <p class="mb-0">© PETPELIA. 네이버 스마트스토어 사용 가이드</p>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+  <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
+  <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+  <script src="data.js"></script>
+  <script src="../common/guide.js"></script>
+</body>
+
+</html>

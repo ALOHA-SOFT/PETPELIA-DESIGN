@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ko" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>쇼핑몰 운영 가이드 | 펫펠리아</title>
+  <link rel="icon" href="../img/favicon.png" type="image/png">
+
+  <!-- 템플릿 리소스는 naver/ 폴더의 것을 공유합니다 -->
+  <link href="naver/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="naver/assets/plugins/metismenu/metisMenu.min.css">
+  <link rel="stylesheet" type="text/css" href="naver/assets/plugins/metismenu/mm-vertical.css">
+  <link rel="stylesheet" type="text/css" href="naver/assets/plugins/simplebar/css/simplebar.css">
+  <link href="naver/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="naver/assets/css/bootstrap-extended.css" rel="stylesheet">
+  <link href="naver/sass/main.css" rel="stylesheet">
+  <link href="naver/sass/dark-theme.css" rel="stylesheet">
+  <link href="naver/sass/blue-theme.css" rel="stylesheet">
+  <link href="naver/sass/semi-dark.css" rel="stylesheet">
+  <link href="naver/sass/bordered-theme.css" rel="stylesheet">
+  <link href="naver/sass/responsive.css" rel="stylesheet">
+  <link href="common/guide.css" rel="stylesheet">
+  <style>
+    .platform-card { color: inherit; text-decoration: none; display: block; height: 100%; transition: transform .15s, box-shadow .15s; }
+    .platform-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0, 0, 0, .12); color: inherit; }
+    .platform-card .p-icon { width: 56px; height: 56px; border-radius: 16px; color: #fff; display: flex; align-items: center; justify-content: center; }
+    .platform-card.naver .p-icon { background: #03a94d; }
+    .platform-card.coupang .p-icon { background: #e52528; }
+    .platform-card.naver:hover { border-color: #03a94d !important; }
+    .platform-card.coupang:hover { border-color: #e52528 !important; }
+    .flow-step { text-align: center; padding: 8px; }
+    .flow-step .material-icons-outlined { font-size: 34px; color: var(--brand); }
+  </style>
+</head>
+
+<body>
+
+  <header class="top-header">
+    <nav class="navbar navbar-expand align-items-center gap-4">
+      <div class="btn-toggle">
+        <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
+      </div>
+      <h5 class="mb-0 fw-semibold d-none d-sm-block">쇼핑몰 운영 가이드</h5>
+      <ul class="navbar-nav gap-1 nav-right-links align-items-center ms-auto">
+        <li class="nav-item">
+          <a class="nav-link dark-mode" href="javascript:;" title="다크 모드"><i class="material-icons-outlined">dark_mode</i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="sidebar-wrapper" data-simplebar="true">
+    <div class="sidebar-header">
+      <div class="logo-icon">
+        <img src="../img/favicon.png" class="logo-img" alt="">
+      </div>
+      <div class="logo-name flex-grow-1">
+        <h5 class="mb-0">운영 가이드</h5>
+      </div>
+      <div class="sidebar-close">
+        <span class="material-icons-outlined">close</span>
+      </div>
+    </div>
+    <div class="sidebar-nav">
+      <ul class="metismenu" id="sidenav">
+        <li class="mm-active">
+          <a href="index.html"><div class="parent-icon"><i class="material-icons-outlined">dashboard</i></div><div class="menu-title">대시보드</div></a>
+        </li>
+        <li class="menu-label">쇼핑몰별 가이드</li>
+        <li>
+          <a href="naver/index.html"><div class="parent-icon"><i class="material-icons-outlined">storefront</i></div><div class="menu-title">네이버 스마트스토어</div></a>
+        </li>
+        <li>
+          <a href="coupang/index.html"><div class="parent-icon"><i class="material-icons-outlined">shopping_bag</i></div><div class="menu-title">쿠팡윙</div></a>
+        </li>
+        <li class="menu-label">바로가기</li>
+        <li>
+          <a href="#info"><div class="parent-icon"><i class="material-icons-outlined">link</i></div><div class="menu-title">접속 정보</div></a>
+        </li>
+        <li>
+          <a href="#products"><div class="parent-icon"><i class="material-icons-outlined">inventory_2</i></div><div class="menu-title">등록 상품</div></a>
+        </li>
+        <li>
+          <a href="#faq"><div class="parent-icon"><i class="material-icons-outlined">help_outline</i></div><div class="menu-title">자주 묻는 질문</div></a>
+        </li>
+        <li>
+          <a href="../index.html"><div class="parent-icon"><i class="material-icons-outlined">pets</i></div><div class="menu-title">펫펠리아 메인</div></a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="main-wrapper">
+    <div class="main-content">
+
+      <div class="card rounded-4 guide-hero mb-4">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center gap-3">
+            <div class="hero-icon"><i class="material-icons-outlined">menu_book</i></div>
+            <div>
+              <h3 class="fw-semibold mb-1">쇼핑몰 운영 가이드</h3>
+              <p class="mb-0 text-secondary">펫펠리아 상품 등록과 스토어·마이샵 기본 세팅은 완료되어 있습니다. 아래에서 이용 중인 쇼핑몰을 선택해 주문 처리와 고객 응대 방법을 확인하세요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <div class="col-12 col-md-6">
+          <a class="card rounded-4 platform-card naver" href="naver/index.html">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="p-icon"><i class="material-icons-outlined fs-2">storefront</i></div>
+                <div>
+                  <h4 class="fw-semibold mb-0">네이버 스마트스토어</h4>
+                  <span class="text-secondary small">스마트스토어센터 사용 안내</span>
+                </div>
+              </div>
+              <p class="mb-3">상품관리 · 판매관리 · 정산관리 · 문의/리뷰관리 · 스토어관리 · 혜택/마케팅 · 온라인교육</p>
+              <span class="btn btn-sm btn-brand" style="background:#03a94d;border-color:#03a94d">가이드 보기 <i class="material-icons-outlined fs-6 align-middle">arrow_forward</i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a class="card rounded-4 platform-card coupang" href="coupang/index.html">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="p-icon"><i class="material-icons-outlined fs-2">shopping_bag</i></div>
+                <div>
+                  <h4 class="fw-semibold mb-0">쿠팡윙</h4>
+                  <span class="text-secondary small">쿠팡 판매자 페이지 사용 안내</span>
+                </div>
+              </div>
+              <p class="mb-3">상품관리 · 가격관리 · 주문/배송 · 정산 · 문의/리뷰 · 마이샵 · 프로모션</p>
+              <span class="btn btn-sm btn-brand" style="background:#e52528;border-color:#e52528">가이드 보기 <i class="material-icons-outlined fs-6 align-middle">arrow_forward</i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card rounded-4 mb-4">
+        <div class="card-body p-4">
+          <h5 class="fw-semibold mb-3">주문 처리 기본 흐름</h5>
+          <div class="row g-3 text-center">
+            <div class="col-6 col-md flow-step"><i class="material-icons-outlined">notifications_active</i><div class="fw-semibold mt-1">1. 신규 주문 확인</div><small class="text-secondary">매일 아침·오후 2회 확인</small></div>
+            <div class="col-6 col-md flow-step"><i class="material-icons-outlined">inventory</i><div class="fw-semibold mt-1">2. 상품 준비</div><small class="text-secondary">재고 확인 후 포장</small></div>
+            <div class="col-6 col-md flow-step"><i class="material-icons-outlined">local_shipping</i><div class="fw-semibold mt-1">3. 송장 입력·발송</div><small class="text-secondary">택배사·송장번호 입력</small></div>
+            <div class="col-6 col-md flow-step"><i class="material-icons-outlined">support_agent</i><div class="fw-semibold mt-1">4. 문의·리뷰 응대</div><small class="text-secondary">당일 답변 권장</small></div>
+            <div class="col-12 col-md flow-step"><i class="material-icons-outlined">payments</i><div class="fw-semibold mt-1">5. 정산 확인</div><small class="text-secondary">구매확정 후 정산</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <div class="col-12 col-xl-6" id="info">
+          <div class="card rounded-4 h-100">
+            <div class="card-body p-4">
+              <h5 class="fw-semibold mb-3">접속 정보</h5>
+              <table class="table info-table mb-0">
+                <tbody>
+                  <tr>
+                    <th>스마트스토어센터</th>
+                    <td><a class="btn btn-sm btn-brand" style="background:#03a94d;border-color:#03a94d" href="https://accounts.commerce.naver.com/login" target="_blank" rel="noopener">로그인</a></td>
+                  </tr>
+                  <tr>
+                    <th>스마트스토어</th>
+                    <td><a href="https://smartstore.naver.com/petpelia" target="_blank" rel="noopener">smartstore.naver.com/petpelia</a></td>
+                  </tr>
+                  <tr>
+                    <th>쿠팡윙</th>
+                    <td><a class="btn btn-sm btn-brand" style="background:#e52528;border-color:#e52528" href="https://wing.coupang.com/tenants/store/store-setting" target="_blank" rel="noopener">로그인</a></td>
+                  </tr>
+                  <tr>
+                    <th>쿠팡 마이샵</th>
+                    <td><a href="https://shop.coupang.com/A01727677" target="_blank" rel="noopener">shop.coupang.com/A01727677</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-6" id="products">
+          <div class="card rounded-4 h-100">
+            <div class="card-body p-4">
+              <h5 class="fw-semibold mb-2">등록 상품</h5>
+              <div class="product-row">
+                <img src="../img/고양이모래.png" alt="펫펠리아 혼합모래">
+                <div class="flex-grow-1 fw-semibold">01. 펫펠리아 혼합모래</div>
+                <div class="d-flex gap-1 flex-wrap justify-content-end">
+                  <a class="btn btn-sm btn-outline-secondary" href="https://smartstore.naver.com/petpelia/products/13821026472" target="_blank" rel="noopener">네이버</a>
+                  <a class="btn btn-sm btn-outline-secondary" href="https://www.coupang.com/vp/products/9785490842" target="_blank" rel="noopener">쿠팡</a>
+                </div>
+              </div>
+              <div class="product-row">
+                <img src="../img/MSP-05.png" alt="펫펠리아 MSP-05">
+                <div class="flex-grow-1 fw-semibold">02. 펫펠리아 MSP-05 밀폐형 스마트 자동화장실</div>
+                <div class="d-flex gap-1 flex-wrap justify-content-end">
+                  <a class="btn btn-sm btn-outline-secondary" href="https://smartstore.naver.com/petpelia/products/13821224022" target="_blank" rel="noopener">네이버</a>
+                  <a class="btn btn-sm btn-outline-secondary" href="https://www.coupang.com/vp/products/9785416200" target="_blank" rel="noopener">쿠팡</a>
+                </div>
+              </div>
+              <div class="product-row">
+                <img src="../img/CKSW-02.png" alt="펫펠리아 CKSW-02">
+                <div class="flex-grow-1 fw-semibold">03. 펫펠리아 CKSW-02 초대형 오픈형 자동화장실</div>
+                <div class="d-flex gap-1 flex-wrap justify-content-end">
+                  <a class="btn btn-sm btn-outline-secondary" href="https://smartstore.naver.com/petpelia/products/13821261173" target="_blank" rel="noopener">네이버</a>
+                  <a class="btn btn-sm btn-outline-secondary" href="https://www.coupang.com/vp/products/9785444546" target="_blank" rel="noopener">쿠팡</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card rounded-4 mb-4" id="faq">
+        <div class="card-body p-4">
+          <h5 class="fw-semibold mb-3">자주 묻는 질문</h5>
+          <div class="accordion" id="faqList">
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">주문이 들어왔는데 어떻게 발송하나요?</button></h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqList"><div class="accordion-body">
+                네이버는 <b>판매관리 &gt; 발주확인/발송관리</b>, 쿠팡은 <b>주문/배송 &gt; 배송 관리</b>에서 신규 주문을 확인하고 택배사와 송장번호를 입력해 발송처리 하시면 됩니다.
+                자세한 순서는 각 쇼핑몰 가이드를 확인하세요.
+              </div></div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">고객이 반품/교환을 요청했어요.</button></h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqList"><div class="accordion-body">
+                네이버 <b>판매관리 &gt; 반품/교환 관리</b>, 쿠팡 <b>주문/배송 &gt; 반품/교환 관리</b>에서 사유를 확인하고 수거를 진행하세요.
+                단순 변심은 고객 부담, 상품 불량·오배송은 판매자 부담이 기본이며, 상품 회수 후 환불을 승인합니다.
+              </div></div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">재고가 떨어졌어요. 어떻게 하나요?</button></h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqList"><div class="accordion-body">
+                재고가 0이 되면 자동으로 품절 처리됩니다. 입고 후 각 쇼핑몰의 <b>상품 조회/수정</b>에서 재고수량을 다시 입력해 주세요.
+                두 쇼핑몰의 재고는 따로 관리되므로 한쪽에서 판매되면 다른 쪽 재고도 함께 조정해야 합니다.
+              </div></div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">판매 대금은 언제 입금되나요?</button></h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqList"><div class="accordion-body">
+                구매확정(또는 자동 구매확정) 이후 쇼핑몰 정책에 따라 정산됩니다. 네이버는 <b>정산관리 &gt; 정산 내역</b>, 쿠팡은 <b>정산 &gt; 정산 현황</b>에서 예정일과 금액을 확인할 수 있습니다.
+              </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="guide-notice text-center">※ 각 쇼핑몰의 화면과 정책은 변경될 수 있으며, 실제 화면과 다를 경우 쇼핑몰 안내를 우선 확인해 주세요.</p>
+    </div>
+  </main>
+
+  <div class="overlay btn-toggle"></div>
+
+  <footer class="page-footer">
+    <p class="mb-0">© PETPELIA. 쇼핑몰 운영 가이드</p>
+  </footer>
+
+  <script src="naver/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="naver/assets/js/jquery.min.js"></script>
+  <script src="naver/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+  <script src="naver/assets/plugins/metismenu/metisMenu.min.js"></script>
+  <script src="naver/assets/plugins/simplebar/js/simplebar.min.js"></script>
+  <script src="common/guide.js"></script>
+</body>
+
+</html>

@@ -79,6 +79,29 @@ video {
   background-color: #555;
 }
 
+.guide-link {
+  padding: 0 0 80px;
+  text-align: center;
+}
+
+.guide-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 1px solid #222;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #222;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.guide-btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+
 .product-swiper {
   width: 100%;
   max-width: 848px;
@@ -121,5 +144,9 @@ video {
   .product-list {
     flex-direction: column;
     padding: 24px 16px 48px;
+  }
+
+  .guide-link {
+    padding: 0 16px 48px;
   }
 }
