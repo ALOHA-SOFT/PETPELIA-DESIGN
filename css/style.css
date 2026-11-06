@@ -8,10 +8,11 @@ body {
   width: 100%;
   max-width: 848px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .container.fix-848 img {
-  width: 848px;
+  width: 848px !important;
 }
 
 img { 
