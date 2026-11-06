@@ -10,6 +10,10 @@ body {
   margin: 0 auto;
 }
 
+.container.fix-848 img {
+  width: 848px;
+}
+
 img { 
   width: 100%;
   max-width: 848px;
