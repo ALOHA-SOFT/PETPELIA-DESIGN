@@ -1,200 +1,36 @@
-<!-- <link rel="stylesheet" href="../css/style.css"> -->
-<!-- <link rel="stylesheet" href="https://aloha-soft.github.io/PETPELIA-DESIGN/css/style.css"> -->
-
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box;}
-
-body {
-  font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-}
-
-.container {
-  width: 100%;
-  max-width: 848px !important;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.container.fix-848 img {
-  width: 848px !important;
-}
-
-img { 
-  width: 100%;
-  max-width: 848px;
-}
-
-video {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-
-.header {
-  padding: 40px 0;
-  text-align: center;
-}
-
-.header img {
-  width: 260px;
-}
-
-.product-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 40px 0 80px;
-}
-
-.product-card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px;
-  border: 1px solid #e5e5e5;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.product-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: contain;
-  margin-bottom: 16px;
-}
-
-.product-name {
-  font-size: 18px;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 20px;
-}
-
-.product-btn {
-  display: inline-block;
-  width: 100%;
-  padding: 12px 0;
-  background-color: #222;
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
-}
-
-.product-btn:hover {
-  background-color: #555;
-}
-
-.guide-link {
-  padding: 0 0 80px;
-  text-align: center;
-}
-
-.guide-btn {
-  display: inline-block;
-  padding: 14px 32px;
-  border: 1px solid #222;
-  border-radius: 6px;
-  background-color: #fff;
-  color: #222;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 700;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.guide-btn:hover {
-  background-color: #222;
-  color: #fff;
-}
-
-.product-swiper {
-  width: 100%;
-  max-width: 848px;
-  margin: 0 auto;
-}
-
-.product-swiper .swiper-slide img {
-  width: 100%;
-  display: block;
-}
-
-.product-swiper .swiper-button-prev,
-.product-swiper .swiper-button-next {
-  color: #222;
-  width: 32px;
-  height: 32px;
-}
-
-.product-swiper .swiper-button-prev::after,
-.product-swiper .swiper-button-next::after {
-  font-size: 20px;
-}
-
-.product-swiper .swiper-pagination-bullet-active {
-  background-color: #222;
-}
-
-@media (max-width: 600px) {
-  .product-swiper .swiper-button-prev,
-  .product-swiper .swiper-button-next {
-    width: 24px;
-    height: 24px;
-  }
-
-  .product-swiper .swiper-button-prev::after,
-  .product-swiper .swiper-button-next::after {
-    font-size: 14px;
-  }
-
-  .product-list {
-    flex-direction: column;
-    padding: 24px 16px 48px;
-  }
-
-  .guide-link {
-    padding: 0 16px 48px;
-  }
-}
-</style>
-
-<div class="container fix-848">
-    <!-- 영상 -->
-    <video src="https://aloha-soft.github.io/PETPELIA-DESIGN/video/01/응고력 유튜브.mp4" width="100%" controls autoplay id="auto"></video>
-    <video src="https://aloha-soft.github.io/PETPELIA-DESIGN/video/01/탈취성능 유튜브.mp4" width="100%" controls autoplay muted></video>
-    <video src="https://aloha-soft.github.io/PETPELIA-DESIGN/video/01/저분진 유튜브.mp4" width="100%" controls autoplay muted></video>
-    <video src="https://aloha-soft.github.io/PETPELIA-DESIGN/video/01/발에덜 유튜브.mp4" width="100%" controls autoplay muted></video>
-    <!-- 메인 -->
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/메인제품소개.png" alt="">
-    <!-- 핵심 성능 GIF -->
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/응고력.png" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/모래-응고력.gif" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/응고력2.png" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/저분진.png" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/모래-저분진.gif" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/저분진2.png" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/흩어짐.png" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/모래-흩어짐.gif" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/흩어짐2.png" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/탈취력.png" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/모래-탈취력.gif" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/탈취력2.png" alt="">
-    <!-- 시험결과 및 시험성적서 -->
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/시험결과 및 시험성적서.png" alt="">
-    <!-- 핵심 특징 요약 -->
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/핵심 특징 요약1.png" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/장점-응고력.gif" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/핵심 특징 요약2.png" alt="">
-    <!-- 원료 및 제품 설계 설명 -->
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/원료 및 제품 설계 설명.png" alt="">
-    <!-- 이벤트 -->
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/오픈이벤트.png" alt="">
-    <!-- 하단 -->
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/사용방법.png" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/제품정보 및 Q&A.png" alt="">
-    <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/정책.png" alt="">
-
-  </div>  
+<div class="container fix-848" style="text-align: center; width: 848px; max-width: 100%; margin: 0 auto;">
+  <!-- 영상 -->
+  <video src="https://aloha-soft.github.io/PETPELIA-DESIGN/video/01/응고력 유튜브.mp4" width="100%" controls autoplay id="auto"></video> <br>
+  <video src="https://aloha-soft.github.io/PETPELIA-DESIGN/video/01/탈취성능 유튜브.mp4" width="100%" controls autoplay muted></video> <br>
+  <video src="https://aloha-soft.github.io/PETPELIA-DESIGN/video/01/저분진 유튜브.mp4" width="100%" controls autoplay muted></video> <br>
+  <video src="https://aloha-soft.github.io/PETPELIA-DESIGN/video/01/발에덜 유튜브.mp4" width="100%" controls autoplay muted></video> <br>
+  <!-- 메인 -->
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/메인제품소개.png" alt="" style="width: 848px; max-width: 100%;">
+  <!-- 핵심 성능 GIF -->
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/응고력.png" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/모래-응고력.gif" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/응고력2.png" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/저분진.png" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/모래-저분진.gif" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/저분진2.png" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/흩어짐.png" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/모래-흩어짐.gif" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/흩어짐2.png" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/탈취력.png" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/모래-탈취력.gif" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/탈취력2.png" alt="" style="width: 848px; max-width: 100%;">
+  <!-- 시험결과 및 시험성적서 -->
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/시험결과 및 시험성적서.png" alt="" style="width: 848px; max-width: 100%;">
+  <!-- 핵심 특징 요약 -->
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/핵심 특징 요약1.png" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/장점-응고력.gif" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/핵심 특징 요약2.png" alt="" style="width: 848px; max-width: 100%;">
+  <!-- 원료 및 제품 설계 설명 -->
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/원료 및 제품 설계 설명.png" alt="" style="width: 848px; max-width: 100%;">
+  <!-- 이벤트 -->
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/오픈이벤트.png" alt="" style="width: 848px; max-width: 100%;">
+  <!-- 하단 -->
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/사용방법.png" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/제품정보 및 Q&A.png" alt="" style="width: 848px; max-width: 100%;">
+  <img src="https://aloha-soft.github.io/PETPELIA-DESIGN/img/01/정책.png" alt="" style="width: 848px; max-width: 100%;">
+</div>  
